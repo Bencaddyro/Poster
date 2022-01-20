@@ -1,0 +1,270 @@
+digraph Pathfinder {
+//compound=true;
+layout=fdp
+imagepath="pic/"
+edge [arrowhead=none,arrowtail=none]
+graph [style=rounded;]
+node [fixedsize=true, imagescale=true, width=3, height=3];
+
+// c'est nous !
+subgraph cluster_avalon {
+label = "Les Terres Libres d'Avalon";
+
+subgraph cluster_nous {
+layout=dot;
+label = "La Compagnie";
+erlun       [label="", xlabel = "Erlun"];
+millyn      [label="", xlabel = "Millyn"];
+lem         [label="", xlabel = "Lem"];
+hank        [label="", xlabel = "Hank"];
+ninaeve     [label="", xlabel = "Ninaeve"];
+nuka        [label="", xlabel = "Nuka"];
+druly       [label="", xlabel = "Druly"];
+jodhy       [label="", xlabel = "Jodhy"];
+};
+
+// foret
+subgraph cluster_foret {
+harald      [label="", xlabel = "Harald <Double Hache> Hialmard", image="harald.png"];
+miroas      [label="", xlabel = "Miro'as", image="miroas.png"];
+nandolombo  [label="", xlabel = "Lisandrel Nandolombo †", image="nandolombo.png"];
+label = "'La' forêt";
+};
+
+// nain
+subgraph cluster_nain {
+ugyr        [label="", xlabel = "Ugyr Yulbrull", image="ugyr.png"];
+pelbuk      [label="", xlabel = "Pelbuk Smokeyes", image="pelbuk.png"];
+aorthuga    [label="", xlabel = "Aorthuga", image="aorthuga.png"];
+label = "Village nains";
+};
+
+// Drake party
+subgraph cluster_drake{
+label = "La Compagnie de Drake";
+drake       [label="", xlabel = "Drakonov <Drake> Hylocereus", image="drake.png"];
+igdran      [label="", xlabel = "Igdran", image="igdran.png"];
+anna        [label="", xlabel = "Anna", image="anna.png"];
+nunary      [label="", xlabel = "Nunary", image="nunary.png"];
+grokk       [label="", xlabel = "Grokk", image="grokk.png"];
+};
+
+// PNJ
+scarlet     [label="", xlabel = "Scarlet †", image="scarlet.png"];
+knight      [label="", xlabel = "Knightwalker †", image="knightwalker.png"];
+caled       [label="", xlabel = "Calèd Cynaiean", image="caled.png"];
+issa        [label="", xlabel = "Issa", image="issa.png"];
+natalia     [label="", xlabel = "Natalia Grena", image="natalia.png"];
+bel         [label="", xlabel = "Bel Yur", image="bel.png"];
+jos         [label="", xlabel = "Jos Jirstug", image="jos.png"];
+};
+
+// mysterious party
+subgraph cluster_mysterious {
+label = "Compagnie mystère";
+m1          [label="", xlabel = "??? †", image="m1.png"];
+m2          [label="", xlabel = "??? †", image="m2.png"];
+m3          [label="", xlabel = "??? †", image="m3.png"];
+};
+
+// lac
+subgraph cluster_lac {
+label = "Lac Encartan";
+yanakamen   [label="", xlabel = "Yanakamen", image="yanakamen.png"];
+inkia       [label="", xlabel = "Inkia", image="inkia.png"];
+aria        [label="", xlabel = "Aria", image="aria.png"];
+};
+
+// cheliax
+subgraph cluster_cheliax {
+viktor      [label="", xlabel = "Viktor Beaucastel", image="viktor.png"];
+gaar        [label="", xlabel = "Gaar", image="gaar.png"];
+javen       [label="", xlabel = "Javen emelsarere", image="javen.png"];
+anastasia   [label="", xlabel = "Anastasia Hunthief", image="anastasia.png"];
+label = "Cheliax";
+};
+
+// isger
+subgraph cluster_isger {
+lisandral   [label="", xlabel = "Lisandral Beaucastel", image="lisandral.png"];
+yushio      [label="", xlabel = "Yushio Sakake", image="yushio.png"];
+alfred      [label="", xlabel = "Alfred Alabmé", image="alfred.png"];
+marshal_nul [label="", xlabel = "Mark Marshal", image="mark.png"];
+bale        [label="", xlabel = "Bale Feng", image="bale.png"];
+priestflower [label="", xlabel = "Éléonore Forterune †", image="eleonore.png"];
+label = "Isger";
+};
+
+// molthune
+subgraph cluster_molthune {
+taalia      [label="", xlabel = "Taalia Breaker", image="taalia.png"];
+bjorn       [label="", xlabel = "Bjorn Marxwin", image="bjorn.png"];
+bozgor      [label="", xlabel = "Bozgor", image="bozgor.png"];
+label = "Molthune";
+};
+
+// druma
+subgraph cluster_druma {
+label = "Druma";
+amelia      [label="", xlabel = "Amelia Sapphire", image="amelia.png"];
+srurd       [label="", xlabel = "Srurd Thundercrest", image="srurd.png"];
+hector      [label="", xlabel = "Hector Rubis", image="hector.png"];
+loren       [label="", xlabel = "Loren Diamond", image="loren.png"];
+};
+
+// nirmathas
+subgraph cluster_nirmathas {
+label = "Nirmathas";
+zelena      [label="", xlabel = "Zéléna Vulkpriyatel", image="zelena.png"];
+cheren      [label="", xlabel = "Chéren Vulkpriyatel", image="cheren.png"];
+};
+
+// kyonin
+subgraph cluster_kyonin {
+label = "Kyonin";
+horace      [label="", xlabel = "Horace Garruck", image="horace.png"];
+diane       [label="", xlabel = "Diane Nyléa", image="diane.png"];
+};
+
+// razmiran
+subgraph cluster_razmiran {
+label = "Razmiran";
+six         [label="", xlabel = "Sixième", image="six.png"];
+neuf        [label="", xlabel = "Neuvième", image="nine.png"];
+};
+
+// brevoy
+subgraph cluster_brevoy {
+label = "Brevoy";
+theodore    [label="", xlabel = "Théodore Surtova", image="theodore.png"];
+helena      [label="", xlabel = "Héléna Surtova", image="helena.png"];
+};
+
+// lastwall
+subgraph cluster_lastwall {
+label = "Dernier Rempart";
+edomae      [label="", xlabel = "Édomae I", image="edomae.png"];
+sebor       [label="", xlabel = "Sébor", image="sebor.png"];
+};
+
+// andoran
+subgraph cluster_andoran {
+label = "Andoran";
+bruce       [label="", xlabel = "Bruce Marshal", image="bruce.png"];
+espion      [label="", xlabel = "Maitre Espion relou"];
+};
+
+// Shadow family
+subgraph cluster_shadow {
+label = "Shadow family";
+nidox       [label="", xlabel = "Nicolas <Nidox> Beaucastel", image="nidox.png"];
+zurza       [label="", xlabel = "Zurza", image="zurza.png"];
+mormir      [label="", xlabel = "Mormir", image="mormir.png"];
+cimra       [label="", xlabel = "Cimra", image="cimra.png"];
+arasha      [label="", xlabel = "Arasha", image="arasha.png"];
+jaze       [label="", xlabel = "Jaze", image="jaze.png"];
+akil       [label="", xlabel = "Akil", image="akil.png"];
+};
+
+// PNJ random
+usta        [label="", xlabel = "Usta (c ki ?)", image="usta.png"];
+ulfric      [label="", xlabel = "Ulfric Urgo", image="ulfric.png"];
+kazia       [label="", xlabel = "Kazia Ezdakorel", image="kazia.png"];
+braefir     [label="", xlabel = "Braefire <Basil> Enok", image="braefire.png"];
+montagne    [label="", xlabel = "???", image="montagne.png"];
+
+// 4 cavaliers
+subgraph cluster_cavaliers {
+label = "4 Cavaliers"
+mort        [label="", xlabel = "Charon / Mort", image="mort.png"];
+famine      [label="", xlabel = "Trelmarixian / Famine", image="famine.png"];
+guerre      [label="", xlabel = "Szuriel / Guerre", image="guerre.png"];
+pestilence  [label="", xlabel = "Apollyon / Pestilence", image="pestilence.png"];
+};
+
+// mage de la magie
+subgraph cluster_mage {
+label = "Mage de la Magie";
+saren       [label="", xlabel = "Saren Ervo", image="saren.png"];
+ajun        [label="", xlabel = "Ajun Hassajj", image="ajun.png"];
+ultar       [label="", xlabel = "Ultar Sygrel †", image="ultar.png"];
+};
+
+// Divin
+subgraph cluster_god {
+label = "Dieux";
+asmodeus    [label="", xlabel = "Asmodéus"];
+cayden      [label="", xlabel = "Cayden Cailéan"];
+erastil     [label="", xlabel = "Érastil"];
+nethys      [label="", xlabel = "Néthys"];
+pharasma    [label="", xlabel = "Pharasma"];
+urgathoa    [label="", xlabel = "Urgathoa"];
+};
+
+
+
+// Pays-Lieux
+
+cluster_avalon -> cluster_molthune,cluster_druma,cluster_lac,cluster_isger;
+cluster_isger -> cluster_druma,cluster_andoran;
+cluster_lac -> cluster_lastwall,cluster_nirmathas,cluster_kyonin,cluster_razmiran,cluster_druma,cluster_molthune;
+
+// Ethnic - party
+//edomae -> sebor;
+//horace -> diane;
+//six -> neuf;
+//viktor -> gaar;
+//scarlet -> knight;
+
+scarlet -> saren;
+grokk -> montagne;
+
+braefire -> cluster_mysterious;
+cluster_mysterious -> cluster_foret;
+
+// Pet
+
+erlun -> millyn;
+lem -> hank;
+druly -> jodhy;
+
+// love interest
+druly -> aria;
+erlun -> helena,natalia;
+taalia -> bjorn;
+
+// nemesis interest
+lem -> ulfric;
+
+// Family
+harald -> miroas -> nandolombo;
+arasha -> nidox,zurza,mormir,cimra,druly,jaze,akil;
+theodore -> helena;
+cheren -> zelena;
+lisandral -> viktor;
+viktor -> nidox;
+bruce -> marshal_nul;
+nineve -> jos;
+
+
+nethys -> ajun -> mort;
+asmodeus -> viktor;
+
+viktor -> braefir -> asmodeus;
+
+// 4 cavaliers
+mort -> cluster_lac;
+pestilence -> montagne;
+famine -> cluster_avalon;
+guerre -> cluster_cheliax;
+
+pestilence -> grokk,saren,montagne;
+famine -> scarlet,knight,saren;
+
+// shadow family <3
+druly -> cluster_shadow
+
+priestflower -> famine,nethys,erastil
+
+}
+

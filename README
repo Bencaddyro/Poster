@@ -1,0 +1,5 @@
+**Small** relation graph for our current tabletop role playing campaign on pathfinder
+
+```
+dot -Tpng -O graph.dot
+```

@@ -1,213 +1,226 @@
 digraph Pathfinder {
-//compound=true;
-layout=fdp
-imagepath="pic/"
-edge [arrowhead=none,arrowtail=none]
-graph [style=rounded;]
-node [fixedsize=true, imagescale=true, width=3, height=3];
+compound=true;
+//layout=fdp;
+//layout=neato;
+layout=osage;
+imagepath="pic/";
+splines=curved;
+
+//node [fixedsize=true, imagescale=true ];
+node [ imagescale=true, width=3, height=3 ];
+
 
 // c'est nous !
 subgraph cluster_avalon {
 label = "Les Terres Libres d'Avalon";
 
 subgraph cluster_nous {
-layout=dot;
 label = "La Compagnie";
-erlun       [label="", xlabel = "Erlun"];
-millyn      [label="", xlabel = "Millyn"];
-lem         [label="", xlabel = "Lem"];
-hank        [label="", xlabel = "Hank"];
-ninaeve     [label="", xlabel = "Ninaeve"];
-nuka        [label="", xlabel = "Nuka"];
-druly       [label="", xlabel = "Druly"];
-jodhy       [label="", xlabel = "Jodhy"];
+erlun       [label=<<table cellborder="0"><tr><td>Erlun</td></tr></table>>];
+millyn      [label=<<table cellborder="0"><tr><td>Millyn</td></tr></table>>];
+lem         [label=<<table cellborder="0"><tr><td>Lem</td></tr></table>>];
+hank        [label=<<table cellborder="0"><tr><td><img src="hank_2.png"/></td></tr><tr><td>Hank</td></tr></table>>];
+ninaeve     [label=<<table cellborder="0"><tr><td>Ninaeve</td></tr></table>>];
+nuka        [label=<<table cellborder="0"><tr><td>Nuka</td></tr></table>>];
+druly       [label=<<table cellborder="0"><tr><td>Druly</td></tr></table>>];
+jodhy       [label=<<table cellborder="0"><tr><td><img src="jodhy.png"/></td></tr><tr><td>Jodhy</td></tr></table>>];
 };
 
 // foret
 subgraph cluster_foret {
-harald      [label="", xlabel = "Harald <Double Hache> Hialmard", image="harald.png"];
-miroas      [label="", xlabel = "Miro'as", image="miroas.png"];
-nandolombo  [label="", xlabel = "Lisandrel Nandolombo †", image="nandolombo.png"];
+harald      [label=<<table cellborder="0"><tr><td><img src="harald.png"/></td></tr><tr><td>Harald "Double Hache" Hialmard</td></tr></table>>];
+miroas      [label=<<table cellborder="0"><tr><td><img src="miroas.png"/></td></tr><tr><td>Miro'as</td></tr></table>>];
+nandolombo  [label=<<table cellborder="0"><tr><td><img src="nandolombo.png"/></td></tr><tr><td>Lisandrel Nandolombo †</td></tr></table>>];
 label = "'La' forêt";
 };
 
 // nain
 subgraph cluster_nain {
-ugyr        [label="", xlabel = "Ugyr Yulbrull", image="ugyr.png"];
-pelbuk      [label="", xlabel = "Pelbuk Smokeyes", image="pelbuk.png"];
-aorthuga    [label="", xlabel = "Aorthuga", image="aorthuga.png"];
+ugyr        [label=<<table cellborder="0"><tr><td><img src="ugyr.png"/></td></tr><tr><td>Ugyr Yulbrull</td></tr></table>>];
+pelbuk      [label=<<table cellborder="0"><tr><td><img src="pelbuk.png"/></td></tr><tr><td>Pelbuk Smokeyes</td></tr></table>>];
+aorthuga    [label=<<table cellborder="0"><tr><td><img src="aorthuga.png"/></td></tr><tr><td>Aorthuga</td></tr></table>>];
 label = "Village nains";
 };
 
 // Drake party
 subgraph cluster_drake{
 label = "La Compagnie de Drake";
-drake       [label="", xlabel = "Drakonov <Drake> Hylocereus", image="drake.png"];
-igdran      [label="", xlabel = "Igdran", image="igdran.png"];
-anna        [label="", xlabel = "Anna", image="anna.png"];
-nunary      [label="", xlabel = "Nunary", image="nunary.png"];
-grokk       [label="", xlabel = "Grokk", image="grokk.png"];
+drake       [label=<<table cellborder="0"><tr><td><img src="drake_2.png"/></td></tr><tr><td>Drakonov "Drake" Hylocereus</td></tr></table>>];
+igdran      [label=<<table cellborder="0"><tr><td><img src="igdran_2.png"/></td></tr><tr><td>Igdran</td></tr></table>>];
+anna        [label=<<table cellborder="0"><tr><td><img src="anna.png"/></td></tr><tr><td>Anna</td></tr></table>>];
+nunary      [label=<<table cellborder="0"><tr><td><img src="nunary.png"/></td></tr><tr><td>Nunary</td></tr></table>>];
+grokk       [label=<<table cellborder="0"><tr><td><img src="grokk.png"/></td></tr><tr><td>Grokk</td></tr></table>>];
 };
 
 // PNJ
-scarlet     [label="", xlabel = "Scarlet †", image="scarlet.png"];
-knight      [label="", xlabel = "Knightwalker †", image="knightwalker.png"];
-caled       [label="", xlabel = "Calèd Cynaiean", image="caled.png"];
-issa        [label="", xlabel = "Issa", image="issa.png"];
-natalia     [label="", xlabel = "Natalia Grena", image="natalia.png"];
-bel         [label="", xlabel = "Bel Yur", image="bel.png"];
-jos         [label="", xlabel = "Jos Jirstug", image="jos.png"];
+scarlet     [label=<<table cellborder="0"><tr><td><img src="scarlet.png"/></td></tr><tr><td>Scarlet †</td></tr></table>>];
+knight      [label=<<table cellborder="0"><tr><td><img src="knightwalker.png"/></td></tr><tr><td>Knightwalker †</td></tr></table>>];
+issa        [label=<<table cellborder="0"><tr><td><img src="issa.png"/></td></tr><tr><td>Issa</td></tr></table>>];
+natalia     [label=<<table cellborder="0"><tr><td><img src="natalia.png"/></td></tr><tr><td>Natalia Grena</td></tr></table>>];
+bel         [label=<<table cellborder="0"><tr><td><img src="bel.png"/></td></tr><tr><td>Bel Yur</td></tr></table>>];
+jos         [label=<<table cellborder="0"><tr><td><img src="jos.png"/></td></tr><tr><td>Jos Jirstug</td></tr></table>>];
 };
 
 // mysterious party
 subgraph cluster_mysterious {
 label = "Compagnie mystère";
-m1          [label="", xlabel = "??? †", image="m1.png"];
-m2          [label="", xlabel = "??? †", image="m2.png"];
-m3          [label="", xlabel = "??? †", image="m3.png"];
+m1          [label=<<table cellborder="0"><tr><td><img src="m1.png"/></td></tr><tr><td>??? †</td></tr></table>>];
+m2          [label=<<table cellborder="0"><tr><td><img src="m2.png"/></td></tr><tr><td>??? †</td></tr></table>>];
+m3          [label=<<table cellborder="0"><tr><td><img src="m3.png"/></td></tr><tr><td>??? †</td></tr></table>>];
 };
 
 // lac
 subgraph cluster_lac {
 label = "Lac Encartan";
-yanakamen   [label="", xlabel = "Yanakamen", image="yanakamen.png"];
-inkia       [label="", xlabel = "Inkia", image="inkia.png"];
-aria        [label="", xlabel = "Aria", image="aria.png"];
+yanakamen   [label=<<table cellborder="0"><tr><td><img src="yanakamen_2.png"/></td></tr><tr><td>Yanakamen</td></tr></table>>];
+inkia       [label=<<table cellborder="0"><tr><td><img src="inkia.png"/></td></tr><tr><td>Inkia</td></tr></table>>];
+aria        [label=<<table cellborder="0"><tr><td><img src="aria.png"/></td></tr><tr><td>Aria</td></tr></table>>];
 };
 
 // cheliax
 subgraph cluster_cheliax {
-viktor      [label="", xlabel = "Viktor Beaucastel", image="viktor.png"];
-gaar        [label="", xlabel = "Gaar", image="gaar.png"];
-javen       [label="", xlabel = "Javen emelsarere", image="javen.png"];
-anastasia   [label="", xlabel = "Anastasia Hunthief", image="anastasia.png"];
+viktor      [label=<<table cellborder="0"><tr><td><img src="viktor.png"/></td></tr><tr><td>Viktor Beaucastel</td></tr></table>>];
+gaar        [label=<<table cellborder="0"><tr><td><img src="gaar.png"/></td></tr><tr><td>Gaar</td></tr></table>>];
+javen       [label=<<table cellborder="0"><tr><td><img src="javen.png"/></td></tr><tr><td>Javen emelsarere</td></tr></table>>];
+anastasia   [label=<<table cellborder="0"><tr><td><img src="anastasia.png"/></td></tr><tr><td>Anastasia Hunthief</td></tr></table>>];
 label = "Cheliax";
 };
 
 // isger
 subgraph cluster_isger {
-lisandral   [label="", xlabel = "Lisandral Beaucastel", image="lisandral.png"];
-yushio      [label="", xlabel = "Yushio Sakake", image="yushio.png"];
-alfred      [label="", xlabel = "Alfred Alabmé", image="alfred.png"];
-marshal_nul [label="", xlabel = "Mark Marshal", image="mark.png"];
-bale        [label="", xlabel = "Bale Feng", image="bale.png"];
-priestflower [label="", xlabel = "Éléonore Forterune †", image="eleonore.png"];
+lisandral   [label=<<table cellborder="0"><tr><td><img src="lisandral.png"/></td></tr><tr><td>Lisandral Beaucastel</td></tr></table>>];
+yushio      [label=<<table cellborder="0"><tr><td><img src="yushio.png"/></td></tr><tr><td>Yushio Sakake</td></tr></table>>];
+alfred      [label=<<table cellborder="0"><tr><td><img src="alfred.png"/></td></tr><tr><td>Alfred Alabmé</td></tr></table>>];
+marshal_nul [label=<<table cellborder="0"><tr><td><img src="mark.png"/></td></tr><tr><td>Mark Marshal</td></tr></table>>];
+bale        [label=<<table cellborder="0"><tr><td><img src="bale.png"/></td></tr><tr><td>Bale Feng</td></tr></table>>];
+priestflower [label=<<table cellborder="0"><tr><td><img src="eleonore_2.png"/></td></tr><tr><td>Éléonore Forterune †</td></tr></table>>];
 label = "Isger";
 };
 
 // molthune
 subgraph cluster_molthune {
-taalia      [label="", xlabel = "Taalia Breaker", image="taalia.png"];
-bjorn       [label="", xlabel = "Bjorn Marxwin", image="bjorn.png"];
-bozgor      [label="", xlabel = "Bozgor", image="bozgor.png"];
+taalia      [label=<<table cellborder="0"><tr><td><img src="taalia.png"/></td></tr><tr><td>Taalia Breaker</td></tr></table>>];
+bjorn       [label=<<table cellborder="0"><tr><td><img src="bjorn.png"/></td></tr><tr><td>Bjorn Marxwin</td></tr></table>>];
+bozgor      [label=<<table cellborder="0"><tr><td><img src="bozgor.png"/></td></tr><tr><td>Bozgor</td></tr></table>>];
 label = "Molthune";
 };
 
 // druma
 subgraph cluster_druma {
 label = "Druma";
-amelia      [label="", xlabel = "Amelia Sapphire", image="amelia.png"];
-srurd       [label="", xlabel = "Srurd Thundercrest", image="srurd.png"];
-hector      [label="", xlabel = "Hector Rubis", image="hector.png"];
-loren       [label="", xlabel = "Loren Diamond", image="loren.png"];
+amelia      [label=<<table cellborder="0"><tr><td><img src="amelia.png"/></td></tr><tr><td>Amelia Sapphire</td></tr></table>>];
+srurd       [label=<<table cellborder="0"><tr><td><img src="srurd.png"/></td></tr><tr><td>Srurd Thundercrest</td></tr></table>>];
+hector      [label=<<table cellborder="0"><tr><td><img src="hector.png"/></td></tr><tr><td>Hector Rubis</td></tr></table>>];
+loren       [label=<<table cellborder="0"><tr><td><img src="loren.png"/></td></tr><tr><td>Loren Diamond</td></tr></table>>];
 };
 
 // nirmathas
 subgraph cluster_nirmathas {
 label = "Nirmathas";
-zelena      [label="", xlabel = "Zéléna Vulkpriyatel", image="zelena.png"];
-cheren      [label="", xlabel = "Chéren Vulkpriyatel", image="cheren.png"];
+zelena      [label=<<table cellborder="0"><tr><td><img src="zelena.png"/></td></tr><tr><td>Zéléna Vulkpriyatel</td></tr></table>>];
+cheren      [label=<<table cellborder="0"><tr><td><img src="cheren.png"/></td></tr><tr><td>Chéren Vulkpriyatel</td></tr></table>>];
 };
 
 // kyonin
 subgraph cluster_kyonin {
 label = "Kyonin";
-horace      [label="", xlabel = "Horace Garruck", image="horace.png"];
-diane       [label="", xlabel = "Diane Nyléa", image="diane.png"];
+horace      [label=<<table cellborder="0"><tr><td><img src="horace.png"/></td></tr><tr><td>Horace Garruck</td></tr></table>>];
+diane       [label=<<table cellborder="0"><tr><td><img src="diane.png"/></td></tr><tr><td>Diane Nyléa</td></tr></table>>];
 };
 
 // razmiran
 subgraph cluster_razmiran {
 label = "Razmiran";
-six         [label="", xlabel = "Sixième", image="six.png"];
-neuf        [label="", xlabel = "Neuvième", image="nine.png"];
+six         [label=<<table cellborder="0"><tr><td><img src="six.png"/></td></tr><tr><td>Sixième</td></tr></table>>];
+neuf        [label=<<table cellborder="0"><tr><td><img src="nine.png"/></td></tr><tr><td>Neuvième</td></tr></table>>];
 };
 
 // brevoy
 subgraph cluster_brevoy {
 label = "Brevoy";
-theodore    [label="", xlabel = "Théodore Surtova", image="theodore.png"];
-helena      [label="", xlabel = "Héléna Surtova", image="helena.png"];
+theodore    [label=<<table cellborder="0"><tr><td><img src="theodore.png"/></td></tr><tr><td>Théodore Surtova</td></tr></table>>];
+helena      [label=<<table cellborder="0"><tr><td><img src="helena.png"/></td></tr><tr><td>Héléna Surtova</td></tr></table>>];
 };
 
 // lastwall
 subgraph cluster_lastwall {
 label = "Dernier Rempart";
-edomae      [label="", xlabel = "Édomae I", image="edomae.png"];
-sebor       [label="", xlabel = "Sébor", image="sebor.png"];
+edomae      [label=<<table cellborder="0"><tr><td><img src="edomae.png"/></td></tr><tr><td>Édomae I</td></tr></table>>];
+sebor       [label=<<table cellborder="0"><tr><td><img src="sebor.png"/></td></tr><tr><td>Sébor</td></tr></table>>];
 };
 
 // andoran
 subgraph cluster_andoran {
 label = "Andoran";
-bruce       [label="", xlabel = "Bruce Marshal", image="bruce.png"];
-espion      [label="", xlabel = "Maitre Espion relou"];
+bruce       [label=<<table cellborder="0"><tr><td><img src="bruce.png"/></td></tr><tr><td>Bruce Marshal</td></tr></table>>];
+espion      [label=<<table cellborder="0"><tr><td>Maitre Espion relou</td></tr></table>>];
 };
 
 // Shadow family
 subgraph cluster_shadow {
 label = "Shadow family";
-nidox       [label="", xlabel = "Nicolas <Nidox> Beaucastel", image="nidox.png"];
-zurza       [label="", xlabel = "Zurza", image="zurza.png"];
-mormir      [label="", xlabel = "Mormir", image="mormir.png"];
-cimra       [label="", xlabel = "Cimra", image="cimra.png"];
-arasha      [label="", xlabel = "Arasha", image="arasha.png"];
-jaze       [label="", xlabel = "Jaze", image="jaze.png"];
-akil       [label="", xlabel = "Akil", image="akil.png"];
+nidox       [label=<<table cellborder="0"><tr><td><img src="nidox.png"/></td></tr><tr><td>Nicolas "Nidox" Beaucastel</td></tr></table>>];
+zurza       [label=<<table cellborder="0"><tr><td><img src="zurza.png"/></td></tr><tr><td>Zurza</td></tr></table>>];
+mormir      [label=<<table cellborder="0"><tr><td><img src="mormir.png"/></td></tr><tr><td>Mormir †</td></tr></table>>];
+cimra       [label=<<table cellborder="0"><tr><td><img src="cimra.png"/></td></tr><tr><td>Cimra</td></tr></table>>];
+arasha      [label=<<table cellborder="0"><tr><td><img src="arasha_2.png"/></td></tr><tr><td>Arasha</td></tr></table>>];
+jaze       [label=<<table cellborder="0"><tr><td><img src="jaze.png"/></td></tr><tr><td>Jaze</td></tr></table>>];
+akil       [label=<<table cellborder="0"><tr><td><img src="akil.png"/></td></tr><tr><td>Akil</td></tr></table>>];
 };
 
 // PNJ random
-usta        [label="", xlabel = "Usta (c ki ?)", image="usta.png"];
-ulfric      [label="", xlabel = "Ulfric Urgo", image="ulfric.png"];
-kazia       [label="", xlabel = "Kazia Ezdakorel", image="kazia.png"];
-braefir     [label="", xlabel = "Braefire <Basil> Enok", image="braefire.png"];
-montagne    [label="", xlabel = "???", image="montagne.png"];
+usta        [label=<<table cellborder="0"><tr><td><img src="usta.png"/></td></tr><tr><td>Usta (c ki ?)</td></tr></table>>];
+ulfric      [label=<<table cellborder="0"><tr><td><img src="ulfric.png"/></td></tr><tr><td>Ulfric Urgo</td></tr></table>>];
+kazia       [label=<<table cellborder="0"><tr><td><img src="kazia.png"/></td></tr><tr><td>Kazia Ezdakorel</td></tr></table>>];
+braefir      [label=<<table cellborder="0"><tr><td><img src="braefire.png"/></td></tr><tr><td>Braefire "Basil" Enok</td></tr></table>>];
+montagne    [label=<<table cellborder="0"><tr><td><img src="montagne.png"/></td></tr><tr><td>???</td></tr></table>>];
 
 // 4 cavaliers
 subgraph cluster_cavaliers {
 label = "4 Cavaliers"
-mort        [label="", xlabel = "Charon / Mort", image="mort.png"];
-famine      [label="", xlabel = "Trelmarixian / Famine", image="famine.png"];
-guerre      [label="", xlabel = "Szuriel / Guerre", image="guerre.png"];
-pestilence  [label="", xlabel = "Apollyon / Pestilence", image="pestilence.png"];
+mort        [label=<<table cellborder="0"><tr><td><img src="mort.png"/></td></tr><tr><td>Charon / Mort</td></tr></table>>];
+famine      [label=<<table cellborder="0"><tr><td><img src="famine.png"/></td></tr><tr><td>Trelmarixian / Famine</td></tr></table>>];
+guerre      [label=<<table cellborder="0"><tr><td><img src="guerre.png"/></td></tr><tr><td>Szuriel / Guerre</td></tr></table>>];
+pestilence  [label=<<table cellborder="0"><tr><td><img src="pestilence.png"/></td></tr><tr><td>Apollyon / Pestilence</td></tr></table>>];
 };
 
 // mage de la magie
 subgraph cluster_mage {
 label = "Mage de la Magie";
-saren       [label="", xlabel = "Saren Ervo", image="saren.png"];
-ajun        [label="", xlabel = "Ajun Hassajj", image="ajun.png"];
-ultar       [label="", xlabel = "Ultar Sygrel †", image="ultar.png"];
+saren       [label=<<table cellborder="0"><tr><td><img src="saren.png"/></td></tr><tr><td>Saren Ervo</td></tr></table>>];
+ajun        [label=<<table cellborder="0"><tr><td><img src="ajun_2.png"/></td></tr><tr><td>Ajun Hassajj</td></tr></table>>];
+ultar       [label=<<table cellborder="0"><tr><td><img src="ultar.png"/></td></tr><tr><td>Ultar Sygrel †</td></tr></table>>];
 };
 
 // Divin
 subgraph cluster_god {
 label = "Dieux";
-asmodeus    [label="", xlabel = "Asmodéus"];
-cayden      [label="", xlabel = "Cayden Cailéan"];
-erastil     [label="", xlabel = "Érastil"];
-nethys      [label="", xlabel = "Néthys"];
-pharasma    [label="", xlabel = "Pharasma"];
-urgathoa    [label="", xlabel = "Urgathoa"];
+asmodeus    [label=<<table cellborder="0"><tr><td>Asmodéus</td></tr></table>>];
+caled       [label=<<table cellborder="0"><tr><td><img src="caled.png"/></td></tr><tr><td>Calèd Cynaiean / Cayden Cailéan</td></tr></table>>];
+erastil     [label=<<table cellborder="0"><tr><td>Érastil</td></tr></table>>];
+nethys      [label=<<table cellborder="0"><tr><td>Néthys</td></tr></table>>];
+pharasma    [label=<<table cellborder="0"><tr><td>Pharasma</td></tr></table>>];
+urgathoa    [label=<<table cellborder="0"><tr><td>Urgathoa</td></tr></table>>];
 };
 
-
+edge [arrowhead=none,arrowtail=none]
 
 // Pays-Lieux
 
-cluster_avalon -> cluster_molthune,cluster_druma,cluster_lac,cluster_isger;
-cluster_isger -> cluster_druma,cluster_andoran;
-cluster_lac -> cluster_lastwall,cluster_nirmathas,cluster_kyonin,cluster_razmiran,cluster_druma,cluster_molthune;
+//cluster_avalon -> cluster_molthune,cluster_druma,cluster_isger;
+//cluster_isger -> cluster_druma,cluster_andoran;
+//cluster_lac -> cluster_lastwall, cluster_nirmathas, cluster_molthune, cluster_avalon, cluster_druma, cluster_kyonin, cluster_razmiran;
+
+/*
+cluster_lac:nw -> cluster_lastwall:sw;
+cluster_lac:w -> cluster_nirmathas:w;
+cluster_lac:sw -> cluster_molthune:ne;
+cluster_lac:s -> cluster_avalon:n;
+cluster_lac:se -> cluster_druma:n;
+cluster_lac:e -> cluster_kyonin:w;
+cluster_lac:ne -> cluster_razmiran:sw;
+*/
+
 
 // Ethnic - party
 //edomae -> sebor;
@@ -216,55 +229,54 @@ cluster_lac -> cluster_lastwall,cluster_nirmathas,cluster_kyonin,cluster_razmira
 //viktor -> gaar;
 //scarlet -> knight;
 
-scarlet -> saren;
-grokk -> montagne;
+//scarlet -> saren;
+//grokk -> montagne;
 
-braefire -> cluster_mysterious;
-cluster_mysterious -> cluster_foret;
+//braefire -> cluster_mysterious;
+//cluster_mysterious -> cluster_foret;
 
 // Pet
 
-erlun -> millyn;
-lem -> hank;
-druly -> jodhy;
+// erlun -> millyn;
+// lem -> hank;
+// druly -> jodhy;
 
 // love interest
-druly -> aria;
-erlun -> helena,natalia;
-taalia -> bjorn;
+// druly -> aria;
+// erlun -> helena,natalia;
+// taalia -> bjorn;
 
 // nemesis interest
-lem -> ulfric;
+// lem -> ulfric;
 
 // Family
-harald -> miroas -> nandolombo;
-arasha -> nidox,zurza,mormir,cimra,druly,jaze,akil;
-theodore -> helena;
-cheren -> zelena;
-lisandral -> viktor;
-viktor -> nidox;
-bruce -> marshal_nul;
-ninaeve -> jos;
+// harald -> miroas -> nandolombo;
+// arasha -> nidox,zurza,mormir,cimra,druly,jaze,akil;
+// theodore -> helena;
+// cheren -> zelena;
+// lisandral -> viktor;
+// viktor -> nidox;
+// bruce -> marshal_nul;
+// ninaeve -> jos;
 
 
-nethys -> ajun -> mort;
-asmodeus -> viktor;
+// nethys -> ajun -> mort;
+// asmodeus -> viktor;
 
-viktor -> braefir -> asmodeus;
+// viktor -> braefir -> asmodeus;
 
 // 4 cavaliers
-mort -> cluster_lac;
-pestilence -> montagne;
-famine -> cluster_avalon;
-guerre -> cluster_cheliax;
-
-pestilence -> grokk,saren,montagne;
-famine -> scarlet,knight,saren;
+// mort -> cluster_lac;
+// famine -> cluster_avalon;
+// guerre -> cluster_cheliax;
+// pestilence -> grokk,saren,montagne;
+//
+// famine -> scarlet,knight,saren;
 
 // shadow family <3
-druly -> cluster_shadow
-
-priestflower -> famine,nethys,erastil
+// druly -> cluster_shadow
+//
+// priestflower -> famine,nethys,erastil
 
 }
 
